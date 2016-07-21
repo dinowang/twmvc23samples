@@ -1,0 +1,10 @@
+{
+  "frameworks": {
+    "net46": {
+      "dependencies": {
+        "ImageResizer": "4.0.5",
+        "WindowsAzure.Storage": "4.3.0"
+      }
+    }
+  }
+}

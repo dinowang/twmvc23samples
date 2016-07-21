@@ -1,0 +1,13 @@
+{
+    "defaultFunctionName": "HttpTriggerCSharp",
+    "description": "A C# function that will be run whenever it receives an HTTP request",
+    "name": "HttpTrigger - C#",
+    "language": "C#",
+    "category": [
+        "Core",
+        "API & Webhooks"
+    ],
+    "userPrompt": [
+        "authLevel"
+    ]
+}

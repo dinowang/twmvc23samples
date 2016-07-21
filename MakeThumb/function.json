@@ -1,0 +1,19 @@
+{
+    "disabled": false,
+    "bindings": [
+        {
+            "name": "inputBlob",
+            "type": "blobTrigger",
+            "direction": "in",
+            "path": "uploaded",
+            "connection": "image_storage"
+        },
+        {
+            "name": "container",
+            "type": "blob",
+            "direction": "in",
+            "path": "uploaded",
+            "connection": "image_storage"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "defaultFunctionName": "TimerTriggerCSharp",
+    "description": "A C# function that will be run on a specified schedule",
+    "name": "TimerTrigger - C#",
+    "language": "C#",
+    "category": [
+        "Core",
+        "Data Processing"
+    ],
+    "userPrompt": [
+        "schedule"
+    ]
+}

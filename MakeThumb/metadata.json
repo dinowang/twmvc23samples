@@ -1,0 +1,14 @@
+{
+    "name": "BlobTrigger - C#",
+    "description": "A C# function that will be run whenever a blob is added to a specified container",
+    "defaultFunctionName": "BlobTriggerCSharp",
+    "language": "C#",
+    "category": [
+        "Core",
+        "Data Processing"
+    ],
+    "userPrompt": [
+        "connection",
+        "path"
+    ]
+}
