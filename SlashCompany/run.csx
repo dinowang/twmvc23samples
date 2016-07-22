@@ -43,13 +43,14 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
         var list = string.Join("\n", rows);
 
         var more = string.Empty;
-        if (result.Found > rows.Count()) 
+        if (result.Found > rows.Count())
         {
-            more = $"\n_全部 {result.Found} 筆，僅列出 {rows.Count()} 筆，查更多: {page}_";                
+            more = $"\n_全部 {result.Found} 筆，僅列出 {rows.Count()} 筆，查更多: {page}_";
         }
 
         return req.CreateResponse(HttpStatusCode.OK, new
         {
+            response_type = "in_channel",
             text = $"`{form["user_name"]}` 查詢 `{q}`\n{list}\n{more}"
         });
     }

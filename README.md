@@ -38,3 +38,4 @@ Slack 目錄僅作存放類別定義用，不是一個完整的 Azure Function
 - https://github.com/Azure/AzureFunctions
 - https://github.com/Azure/azure-webjobs-sdk-templates/tree/master/Templates
 - https://github.com/Azure/azure-content/tree/master/articles/azure-functions
+- https://github.com/Azure/azure-content-zhtw/tree/master/articles/azure-functions

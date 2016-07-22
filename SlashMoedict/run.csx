@@ -38,7 +38,7 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
 
     if (q.Length > 1)
     {
-        attachments.Add(new Attachment 
+        attachments.Add(new Attachment
         {
             AuthorName = "萌典",
             AuthorLink = "https://www.moedict.tw/",
@@ -56,7 +56,7 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
             var linkUrl = $"https://www.moedict.tw/{HttpUtility.UrlEncode("" + letter)}";
             var jsonUrl = $"https://www.moedict.tw/uni/{HttpUtility.UrlEncode("" + letter)}.json";
             var imageUrl = $"https://www.moedict.tw/{HttpUtility.UrlEncode("" + letter)}.png";
-            
+
             using (var response = await client.GetAsync(jsonUrl))
             using (var content = response.Content)
             {
@@ -73,20 +73,20 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
 					var partsOfSpeech = heteronym
                                             .Definitions
                                             .GroupBy(x => x.Type, x => x.Def)
-                                            .Select(x => new AttachmentField 
+                                            .Select(x => new AttachmentField
                                             {
                                                 Title = x.Key,
                                                 Value = string.Join("\n", Enumerable.Range(1, x.Count()).Zip(x, (n, v) => $"{n}. {v}"))
                                             });
 
-                    attachments.Add(new Attachment 
+                    attachments.Add(new Attachment
                     {
                         Title = result.Title,
                         TitleLink = linkUrl,
                         ThumbUrl = imageUrl,
                         Text = sb.ToString(),
                         Fields = partsOfSpeech,
-                        MarkdownFields = new [] { "text", "pretext" }    
+                        MarkdownFields = new [] { "text", "pretext" }
                     });
                 }
             }
@@ -95,8 +95,8 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
 
     return req.CreateResponse(HttpStatusCode.OK, new
     {
+        response_type = "in_channel",
         text = $"*{q}*",
         attachments = attachments
     });
 }
-
