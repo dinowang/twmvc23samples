@@ -5,14 +5,14 @@
             "name": "inputBlob",
             "type": "blobTrigger",
             "direction": "in",
-            "path": "uploaded",
+            "path": "origin",
             "connection": "image_storage"
         },
         {
             "name": "container",
             "type": "blob",
             "direction": "in",
-            "path": "uploaded",
+            "path": "thumb",
             "connection": "image_storage"
         }
     ]

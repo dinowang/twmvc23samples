@@ -8,9 +8,7 @@ twMVC #23 於 2016-7-24 舉辦, 詳情可參考[活動資訊與報名](https://m
 
 此處原始碼皆以 C# Script 開發。
 
-使用 git 下載原始碼或者使用 [Deploy to Azure](https://azuredeploy.net/) 按鈕直接部署到你自己的 Azure。
-
-[![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
+Fork 這個專案，在新的 Function App 中，加入這個專案為 CI 來源。
 
 ## 範例目錄
 
