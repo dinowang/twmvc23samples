@@ -13,19 +13,19 @@ Fork 這個專案，在新的 Function App 中，加入這個專案為 CI 來源
 ## 範例目錄
 
 - PeriodTimer  
-  定時觸發器
+  定時觸發器，作為 Azure Functions 第一個練習，學習重點：熟悉 Function App 建立與線上設定、開發介面，進行第一個事件驅動的 Function。
 
 - MakeThumb  
-  Blob 觸發器
+  Blob 觸發器，學習重點：進一步暸解 Binding，熟悉 C# 的 Function App 開發細節，並利用 GitHub 作為 Function App 的部署方式。
 
 - SlashTime  
-  HTTP 觸發器
+  HTTP 觸發器。
 
 - SlashCompany  
-  HTTP 觸發器
+  HTTP 觸發器。
 
 - SlashMoedict  
-  HTTP 觸發器
+  HTTP 觸發器。
 
 ```
 Slack 目錄僅作存放類別定義用，不是一個完整的 Azure Function
