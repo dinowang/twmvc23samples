@@ -42,7 +42,7 @@ public static void Run(ICloudBlob inputBlob, CloudBlobContainer container, Trace
         thumbStream.Seek(0, SeekOrigin.Begin);
 
         // 上傳 thumb 圖片
-        var outputBlob = container.GetBlockBlobReference($"{name}-100.{ext}");
+        var outputBlob = container.GetBlockBlobReference($"{name}-100{ext}");
         outputBlob.UploadFromStream(thumbStream);
 
         // 設定 blob 物件屬性
