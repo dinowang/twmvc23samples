@@ -19,17 +19,21 @@ Fork 這個專案，在新的 Function App 中，加入這個專案為 CI 來源
   Blob 觸發器，學習重點：進一步暸解 Binding，熟悉 C# 的 Function App 開發細節，並利用 GitHub 作為 Function App 的部署方式。
 
 - SlashTime  
-  HTTP 觸發器。
+  給 Slack 的 Slash Command 用的 HTTP 觸發器。
 
 - SlashCompany  
-  HTTP 觸發器。
+  給 Slack 的 Slash Command 用的 HTTP 觸發器。
 
 - SlashMoedict  
-  HTTP 觸發器。
+  給 Slack 的 Slash Command 用的 HTTP 觸發器。
 
 ```
 Slack 目錄僅作存放類別定義用，不是一個完整的 Azure Function
 ```
+
+## C# 開發者
+
+開發者為 Function 安裝增加 NuGet 套件的作法請參考這篇[Stackoverflow 上的問答](http://stackoverflow.com/questions/36411536/how-can-i-use-nuget-packages-in-my-azure-functions)。
 
 ## 參考資料
 
