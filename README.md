@@ -4,6 +4,8 @@
 
 twMVC #23 於 2016-7-24 舉辦, 詳情可參考[活動資訊與報名](https://mvc.tw/event/2016/7/24)網頁。
 
+[簡報檔](https://docs.com/is-twMVC/4857/twmvc-23-azure-functions)
+
 ## 原始碼使用說明
 
 此處原始碼皆以 C# Script 開發。
